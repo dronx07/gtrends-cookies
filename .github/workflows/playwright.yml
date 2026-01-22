@@ -29,7 +29,7 @@ jobs:
           playwright install chromium
 
       - name: Run Playwright script
-        run: python get_trends_cookies.py
+        run: python get_cookies.py
 
       - name: Commit and push cookie file
         run: |
