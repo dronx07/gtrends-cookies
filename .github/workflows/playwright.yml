@@ -1,8 +1,12 @@
 name: Get Google Trends Cookies
 
 on:
+  schedule:
+    # Runs every 30 minutes
+    - cron: "*/30 * * * *"
+
+  # Optional: allow manual runs
   workflow_dispatch:
-  push:
 
 jobs:
   run-playwright:
